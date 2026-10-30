@@ -1,0 +1,25 @@
+# Generated artifacts
+.DS_Store
+bin/
+build/
+dist/
+logs/
+.build/
+launchd/*.plist
+
+# Private runtime configuration; publish examples only
+/nodes.json
+/hysteria2-client.yaml
+/sing-box.json
+/mihomo.yaml
+/share-link.txt
+/settings.json
+/TASK_LOG.md
+.env
+.env.*
+*.bak
+*.log
+*.key
+*.pem
+*.p12
+*.pfx

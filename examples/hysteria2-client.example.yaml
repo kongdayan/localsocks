@@ -1,0 +1,13 @@
+# Replace the example endpoint and password before use.
+server: proxy.example.com:443
+auth: "CHANGE_ME"
+
+tls:
+  sni: proxy.example.com
+  insecure: false
+
+socks5:
+  listen: 127.0.0.1:10800
+
+http:
+  listen: 127.0.0.1:10801

@@ -1,0 +1,17 @@
+[Unit]
+Description=Localsocks Hysteria2 client
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USER
+WorkingDirectory=/opt/localsocks
+Environment=HYS2_BIN=/usr/local/bin/hysteria
+Environment=HYS2_CONF=/opt/localsocks/hysteria2-client.yaml
+ExecStart=/bin/bash /opt/localsocks/daemon.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
